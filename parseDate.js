@@ -16,7 +16,7 @@ const parseDate = (req, res, next) => {
 
   if (date.toString() == 'Invalid Date') {
     req.json = {
-      err: date.toString()
+      error: date.toString()
     };
   } else {
     req.json = {
