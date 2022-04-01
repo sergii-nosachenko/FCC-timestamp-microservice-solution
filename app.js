@@ -16,8 +16,7 @@ app.use(cors({ optionsSuccessStatus: 200 })); // some legacy browsers choke on 2
 
 app.use('/public', express.static('public'));
 
-app.use('/api', parser);
-app.use('/api/:date', parser);
+app.use('/api/:date?', parser);
 
 // API ROUTES
 
@@ -27,7 +26,7 @@ app.get('/', (req, res) => {
 });
 
 // API GET route
-app.get(['/api', '/api/:date'], (req, res) => {
+app.get('/api/:date?', (req, res) => {
   res.json(req.json);
 });
 
