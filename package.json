@@ -1,0 +1,25 @@
+{
+  "name": "fcc-timestamp-microservice-solution",
+  "version": "1.0.0",
+  "description": "FCC certification challenge #1. Timestamp microservice.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergii-nosachenko/FCC-timestamp-microservice-solution.git"
+  },
+  "keywords": [
+    "challenge",
+    "microservice",
+    "node",
+    "express"
+  ],
+  "author": "Sergii Nosachenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergii-nosachenko/FCC-timestamp-microservice-solution/issues"
+  },
+  "homepage": "https://github.com/sergii-nosachenko/FCC-timestamp-microservice-solution#readme"
+}
