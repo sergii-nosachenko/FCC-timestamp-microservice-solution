@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>FCC certification challenge #1. Timestamp microservice.</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="public/style.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div class="content">
+      <h1>FCC certification challenge #1.<br />Timestamp microservice.</h1>
+      <h2>How to use:</h2>
+      <p>Go to API endpoint <code>/api/[date]</code></p>
+      <p>with valid Unix timestamp:</p>
+      <p><a href="#" id="link1"></a></p>
+      <p>or valid date string:</p>
+      <p><a href="#" id="link2"></a></p>
+    </div>
+
+    <script>
+      const link1 = document.getElementById('link1');
+      const link2 = document.getElementById('link2');
+      const exampleUnix = `${document.URL}api/566179200000`;
+      const exampleString = `${document.URL}api/1987-12-11`;
+      link1.setAttribute('href', exampleUnix);
+      link1.textContent = exampleUnix;
+      link2.setAttribute('href', exampleString);
+      link2.textContent = exampleString;
+    </script>
+  </body>
+</html>
