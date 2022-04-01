@@ -27,10 +27,7 @@ app.get('/', (req, res) => {
 });
 
 // API GET route
-app.get('/api', (req, res) => {
-  res.json(req.json);
-});
-app.get('/api/:date', (req, res) => {
+app.get(['/api', '/api/:date'], (req, res) => {
   res.json(req.json);
 });
 
